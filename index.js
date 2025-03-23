@@ -191,3 +191,15 @@ class Car extends Vehicle {
     }
 }
 let car = new Car("bmw", 120);
+// function
+function hello(name, age, cb) {
+    cb("nisil007");
+}
+hello("nisil", 22, (arg) => {
+    console.log(arg);
+});
+function person(name, age, gender = "disclose") {
+    console.log(name, age, gender);
+}
+person("nisil", 22, "male");
+person("pravesh", 20);

@@ -323,3 +323,27 @@ console.log(dreamLand.getDetailsOfHotel());
   }
 
   let car=new Car("bmw",120)
+
+
+  // function
+
+function hello(name:string,age:number,cb:(arg:string)=>void){
+  cb("nisil007");
+}  
+
+hello("nisil",22,(arg:string)=>{
+  console.log(arg);
+})
+
+
+
+function person(name:string,age:number,gender:string="disclose"){
+  console.log(name,age,gender);
+  
+}  
+
+person("nisil",22,"male");
+person("pravesh",20)
+
+
+
