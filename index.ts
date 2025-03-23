@@ -354,7 +354,7 @@ function restParameter(...args:number[]):number{
   for(let i:number=0;i<args.length;i++){
     sum+=args[i];
   }
-  return sum
+  return sum;
 }
 
 console.log(restParameter(1,2,3,4,5,6,7,8))
