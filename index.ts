@@ -347,3 +347,21 @@ person("pravesh",20)
 
 
 
+// Rest Parameter
+
+function restParameter(...args:number[]):number{
+  let sum:number=0
+  for(let i:number=0;i<args.length;i++){
+    sum+=args[i]
+  }
+  return sum;
+}
+
+console.log(restParameter(1,2,3,4,5,6,7,8))
+
+function restParameter2(...args:string[]):string{
+  
+  return args[0];
+}
+
+console.log(restParameter2("nisil","ram","hari"))

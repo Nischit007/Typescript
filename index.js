@@ -203,3 +203,16 @@ function person(name, age, gender = "disclose") {
 }
 person("nisil", 22, "male");
 person("pravesh", 20);
+// Rest Parameter
+function restParameter(...args) {
+    let sum = 0;
+    for (let i = 0; i < args.length; i++) {
+        sum += args[i];
+    }
+    return sum;
+}
+console.log(restParameter(1, 2, 3, 4, 5, 6, 7, 8));
+function restParameter2(...args) {
+    return args[0];
+}
+console.log(restParameter2("nisil", "ram", "hari"));
