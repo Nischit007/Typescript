@@ -216,3 +216,18 @@ function restParameter2(...args) {
     return args[0];
 }
 console.log(restParameter2("nisil", "ram", "hari"));
+// Generics ---
+const score = [];
+const names = [];
+function identityOne(val) {
+    return val;
+}
+function identityThree(val) {
+    return val;
+}
+function identityFour(val) {
+    return val;
+}
+identityThree(true);
+identityFour("4");
+identityFour({ brand: "nisil", type: 10 });
