@@ -360,8 +360,45 @@ function restParameter(...args:number[]):number{
 console.log(restParameter(1,2,3,4,5,6,7,8))
 
 function restParameter2(...args:string[]):string{
-  
   return args[0];
 }
 
 console.log(restParameter2("nisil","ram","hari"));
+
+
+
+
+
+
+// Generics ---
+const score : Array<number>=[]
+const names:Array<string>=[]
+
+
+function identityOne(val:boolean | number):boolean | number{
+  return val;
+}
+
+
+function identityThree<Type>(val:Type):Type{
+  return val;
+}
+
+
+function identityFour<T>(val:T):T{
+  return val;
+}
+
+
+
+identityThree(true)
+identityFour("4")
+
+
+interface Bootle{
+  brand: string,
+  type: number
+}
+
+
+identityFour<Bootle>({brand:"nisil",type:10});
